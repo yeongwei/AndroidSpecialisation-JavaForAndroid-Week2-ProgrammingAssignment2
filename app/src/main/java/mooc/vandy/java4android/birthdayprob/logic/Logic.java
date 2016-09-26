@@ -113,7 +113,7 @@ public class Logic
         Random random = new Random(seed);
         HashSet<Integer> accumulated2 = new HashSet<Integer>();
         for (int i = 0; i < sampleSize; i++)
-            if (accumulated2.add(generateBirthDay(random, 364)) == false) // found
+            if (accumulated2.add(generateBirthDay(random, 365)) == false) // found
                 // duplicated
                 // entry
                 return true;
