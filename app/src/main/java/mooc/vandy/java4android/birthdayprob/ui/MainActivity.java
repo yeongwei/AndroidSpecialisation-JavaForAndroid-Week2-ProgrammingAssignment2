@@ -87,6 +87,7 @@ public class MainActivity
      * @param buttonPress
      */
     public void buttonPressed(View buttonPress) {
+        Log.i(LOG_TAG, "butonPressed");
         resetText();
         mLogic.process();
     }
@@ -185,7 +186,7 @@ public class MainActivity
      */
     @Override
     public void makeAlertToast(String alertText) {
-        Toast.makeText(this,alertText,Toast.LENGTH_LONG);
+        Toast.makeText(this,alertText,Toast.LENGTH_LONG).show();
     }
 }
 
